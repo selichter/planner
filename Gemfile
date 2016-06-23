@@ -18,6 +18,7 @@ gem "bower-rails"
 gem 'angular-rails-templates'
 
 gem 'active_model_serializers'
+gem 'devise'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
