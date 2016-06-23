@@ -168,7 +168,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   angular-rails-templates
-  bower-rails
+  bower-rails (~> 0.10.0)
   byebug
   coffee-rails (~> 4.1.0)
   devise
