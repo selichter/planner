@@ -1,3 +1,3 @@
 class TaskSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :item, :due_date, :finished
 end

@@ -7,4 +7,4 @@ A user has one profile / profile belongs to a users
   Profile has many notes/notes belong to a profile.
   Profile has many trackers/tracker belongs to a profile
 
-  Include google calendar?
+  Include google calendar api?
