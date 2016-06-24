@@ -8,3 +8,28 @@ A user has one profile / profile belongs to a users
   Profile has many trackers/tracker belongs to a profile
 
   Include google calendar api?
+
+
+profile - users/:id
+
+lists
+lists/new
+lists/:id
+lists/:id/edit
+lists/:id ---destroy
+
+lists/:id/tasks
+lists/:id/tasks/new
+lists/:id/tasks/:id
+lists/:id/tasks/:id/edit
+lists/:id/tasks/:id ---destroy
+
+
+to do:
+rails - routes
+rails - controllers
+
+angular - routes
+angular - lists controller
+angular - tasks controller
+angular - login?
