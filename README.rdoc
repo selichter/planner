@@ -1,28 +1,10 @@
-== README
+A user has one profile / profile belongs to a users
+  ---profile is created when a user is created
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  Profile has many lists/lists belong to a profile
+    lists have many tasks/tasks belong to a list
 
-Things you may want to cover:
+  Profile has many notes/notes belong to a profile.
+  Profile has many trackers/tracker belongs to a profile
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  Include google calendar?
