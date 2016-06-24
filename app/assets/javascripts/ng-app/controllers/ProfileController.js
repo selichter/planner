@@ -1,9 +1,9 @@
-function ProfileController($scope) {
+function ProfileController() {
   var ctrl = this;
   var message = "Here is a message";
   ctrl.message = message;
 }
 
 angular
-  .module(app)
+  .module('app')
   .controller('ProfileController', ProfileController)

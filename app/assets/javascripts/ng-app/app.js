@@ -1,9 +1,7 @@
 angular
 .module('app', [
     'ui.router',
-    'ngAnimate',
     'templates',
-    'ngSanitize'
     ])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
@@ -20,3 +18,7 @@ angular
 
       $urlRouterProvider.otherwise("/");
   })
+
+
+// routes are funny -- fix them
+// http://localhost:3000/#/lists
