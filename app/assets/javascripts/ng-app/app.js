@@ -12,6 +12,11 @@ angular
         templateUrl: 'profile.html',
         controller: 'ProfileController as profile'
       })
+      .state('lists', {
+        url: '/lists', //lists#index
+        templateUrl: 'lists.html',
+        controller: 'ListsController as lists'
+      })
 
       $urlRouterProvider.otherwise("/");
   })
