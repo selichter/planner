@@ -11,14 +11,16 @@ angular
         controller: 'ProfileController as profile'
       })
       .state('lists', {
-        url: '/lists', //lists#index
+        url: '/lists', //index
         templateUrl: 'lists.html',
         controller: 'ListsController as lists'
       })
+      .state('list', { //show
+        url: '/list/:id',
+        templateUrl: 'list.html',
+        controller: 'ListController as list'
+      })
+
 
       $urlRouterProvider.otherwise("/");
   })
-
-
-// routes are funny -- fix them
-// http://localhost:3000/#/lists

@@ -4,13 +4,9 @@
       <h4 class="page-header">Lists</h4>
       <div ng-repeat="list in lists.all">
         <ul>
-          <li>{{ list.name }}</li> <!-- when list/:id is filled out make this a link -->
+          <li><a href="#/list/{{list.id}}">{{list.name}}</a></li> 
         </ul>
       </div>
     </div>
   </div>
 </div>
-
-<!-- FOR TESTING  <input type="text" ng-model="yourName" placeholder="Enter a name here">
-  <hr>
-  <h1>Hello {{yourName}}!</h1> -->

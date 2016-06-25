@@ -5,6 +5,11 @@ function BackendService($http) {
     return $http.get('/lists')
   };
 
+  //list show
+  this.getList = function(id) {
+    return $http.get('/lists/' + id)
+  };
+
 }
 
 BackendService.$inject = ['$http']
