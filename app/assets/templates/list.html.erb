@@ -2,14 +2,7 @@
   <div class="row">
     <h4 class="page-header">{{list.name}}</h4>
   </div>
-  <div ng-repeat="task in list.tasks"> <!-- not working -->
+  <div ng-repeat="task in list.tasks"> 
     {{task.item}} -- {{task.due_date}} -- {{task.status}}
   </div>
 </div>
-
-
-
-<h2>Genres:</h2>
-    <ul id="genres">
-      <li ng-repeat="genre in artist.genres"><a href="#/genre/{{ genre.id }}">{{ genre.name }}</a></li>
-    </ul>
