@@ -2,6 +2,11 @@ function ListsController(BackendService) {
   var ctrl = this;
   var lists = [];
 
+  var List = function(name) {
+    this.name = name;
+    debugger;
+  }
+
   var init = function() {
     BackendService
       .getLists()
@@ -11,6 +16,8 @@ function ListsController(BackendService) {
   };
 
   init();
+
+
 
 };
 
