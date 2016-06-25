@@ -6,7 +6,9 @@ function ListController($stateParams, BackendService ) {
     BackendService
       .getList(id)
       .then(function(response) {
-        ctrl.name = response.data.name
+        var list = response.data
+        ctrl.name = list.name
+        ctrl.tasks = list.tasks
       });
   };
 
