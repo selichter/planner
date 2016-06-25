@@ -15,6 +15,10 @@ function BackendService($http) {
     return $http.get('/tasks')
   };
 
+  //task show
+  this.getTask = function(id) {
+    return $http.get('/tasks/' + id)
+  };
 
 }
 

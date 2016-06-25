@@ -25,6 +25,11 @@ angular
         templateUrl: 'tasks.html',
         controller: 'TasksController as tasks'
       })
+      .state('task', {
+        url: '/task/:id',
+        templateUrl: 'task.html',
+        controller: 'TaskController as task'
+      })
 
 
       $urlRouterProvider.otherwise("/");
