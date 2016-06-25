@@ -1,8 +1,8 @@
 function ListsController() {
-  this.name = "Bill Gates"
+  this.name = "Bill gates"
 
 }
 
 angular
-  .module('app')
+  .module("app")
   .controller('ListsController', ListsController)
