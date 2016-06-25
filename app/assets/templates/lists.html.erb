@@ -1,22 +1,16 @@
-<!-- <div class="container" >
-  <h1>lists#index</h1>
-
-  <label>Name:</label>
-  {{lists.project}}
-
-
-
-</div> -->
-
-
 <div class="container">
   <div class="row">
-    <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 artists image" ng-repeat="list in lists.all">
-        <h3>{{ list.name }}</a></h3>
+    <div class="col-md-3">
+      <h4 class="page-header">Lists</h4>
+      <div ng-repeat="list in lists.all">
+        <ul>
+          <li>{{ list.name }}</li> <!-- when list/:id is filled out make this a link -->
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 
-<input type="text" ng-model="yourName" placeholder="Enter a name here">
+<!-- FOR TESTING  <input type="text" ng-model="yourName" placeholder="Enter a name here">
   <hr>
-  <h1>Hello {{yourName}}!</h1>
+  <h1>Hello {{yourName}}!</h1> -->
