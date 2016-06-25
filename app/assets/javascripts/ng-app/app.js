@@ -15,10 +15,15 @@ angular
         templateUrl: 'lists.html',
         controller: 'ListsController as lists'
       })
-      .state('list', { //show
+      .state('list', { //show lists - list includes tasks
         url: '/list/:id',
         templateUrl: 'list.html',
         controller: 'ListController as list'
+      })
+      .state('tasks', {
+        url: '/tasks',
+        templateUrl: 'tasks.html',
+        controller: 'TasksController as tasks'
       })
 
 

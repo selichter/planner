@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h4 class="page-header">Tasks</h4>
+      <div ng-repeat="task in tasks.all">
+        <ul>
+          <li><a href="#/task/{{task.id}}">{{task.item}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,10 @@
   <div class="row">
     <h4 class="page-header">{{list.name}}</h4>
   </div>
+  <div ng-repeat="task in list.tasks"> <!-- not working -->
+    {{task.item}} -- {{task.due_date}} -- {{task.status}}
+  </div>
+
   <ul>
     <li>Task 1</li>
     <li>Task 2</li>

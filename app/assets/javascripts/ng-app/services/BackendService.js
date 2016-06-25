@@ -10,6 +10,12 @@ function BackendService($http) {
     return $http.get('/lists/' + id)
   };
 
+  // task index
+  this.getTasks = function() {
+    return $http.get('/tasks')
+  };
+
+
 }
 
 BackendService.$inject = ['$http']
