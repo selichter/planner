@@ -9,6 +9,12 @@ class ListsController < ApplicationController
     render :json => @list
   end
 
+  def create
+    @list = List.find_or_create_by(name: params[:list])
+    @list.save
+    render :json => @list
+  end
+
 
 
 end

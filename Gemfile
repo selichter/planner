@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem "bower-rails", "~> 0.10.0"
 gem 'angular-rails-templates'
+gem 'angular_rails_csrf'
 
 gem 'active_model_serializers'
 gem 'devise'

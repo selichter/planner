@@ -2,12 +2,20 @@
   <div class="row">
     <div class="col-md-3">
       <h4 class="page-header">Lists</h4>
-      <div ng-repeat="list in lists.all">
-        <ul>
-          <li><a href="#/list/{{list.id}}">{{list.name}}</a></li>
+
+        <ul id="lists">
+          <li ng-repeat="list in lists.all"> <a  href="#/list/{{list.id}}">{{list.name}}</a></li>
         </ul>
-      </div>
+
     </div>
   </div>
+
+  <div class="row">
+    <h4 class="page-header">Add a List</h4>
+    <form class="form-group" ng-submit="addList()">
+      <input ng-model="newList" class="form-control" type="text" placeholder="Add List" id="new_list"><br>
+      <input type="submit" value="List" class="btn btn-primary">
+
+    </form>
+  </div>
   <!--  Add form to make new list-->
-</div>

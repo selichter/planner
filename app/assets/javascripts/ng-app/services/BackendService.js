@@ -20,6 +20,10 @@ function BackendService($http) {
     return $http.get('/tasks/' + id)
   };
 
+  this.postList = function(data) {
+    return $http.post('/lists', data)
+  }
+
 
 }
 
