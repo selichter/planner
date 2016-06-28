@@ -27,9 +27,11 @@ function ListController($stateParams, BackendService, $scope ) {
     BackendService
       .postTask(data)
       .success(function(response){
-        debugger;
-        $('ul#lists').append('<li>' +  response.item  + '</li>')
-        $('form#new_item').trigger("reset");
+        // debugger;
+        // $('ul#lists').append('<li>' +  response.item  + '</li>')
+        // $('form#new_item').trigger("reset");
+        ctrl.lists.push(task)
+
       })
       .error(function(response) {
         console.log("error - " + response)
