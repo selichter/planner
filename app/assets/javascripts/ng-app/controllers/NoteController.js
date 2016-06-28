@@ -1,15 +1,13 @@
 function NoteController($stateParams, BackendService, $scope ) {
   var ctrl = this;
   var id = $stateParams.id;
-  ctrl.id = $stateParams.id;
 
   var init = function() {
     BackendService
       .getNote(id)
       .then(function(response) {
-        var note = response.data;
-        ctrl.title = note.title;
-        ctrl.content = note.content;
+        ctrl.title = response.data.title;
+        ctrl.content = response.data.content;
       });
   };
 
