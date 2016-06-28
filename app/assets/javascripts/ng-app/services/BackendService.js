@@ -31,7 +31,11 @@ function BackendService($http) {
 
   this.getNotes = function() {
     return $http.get('/notes')
-  }
+  };
+
+  this.getNote = function(id) {
+    return $http.get('/notes/' + id)
+  };
 
 }
 

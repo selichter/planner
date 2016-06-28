@@ -35,6 +35,11 @@ angular
         templateUrl: 'notes.html',
         controller: 'NotesController as notes'
       })
+      .state('note', {
+        url: '/note/:id',
+        templateUrl: 'note.html',
+        controller: 'NoteController as note'
+      })
 
 
       $urlRouterProvider.otherwise("/");
