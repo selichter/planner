@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <h4 class="page-header">Notes</h4>
+
+
+      <div ng-repeat="note in notes.all">
+        <a  href="#/note/{{note.id}}">{{note.title}}</a>
+        <p>{{note.content}}</p>
+      </div>
+
+    </div>
+  </div>
+</div>
