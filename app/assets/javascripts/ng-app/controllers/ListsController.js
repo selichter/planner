@@ -5,7 +5,6 @@ function ListsController($scope, BackendService) {
 
   var List = function(name) {
     this.name = name;
-    debugger;
   };
 
 
