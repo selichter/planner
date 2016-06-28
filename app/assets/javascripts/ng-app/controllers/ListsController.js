@@ -4,7 +4,8 @@ function ListsController($scope, BackendService) {
   ctrl.lists = [];
 
   var List = function(name) {
-    this.name = name
+    this.name = name;
+    debugger;
   };
 
 
@@ -24,7 +25,7 @@ function ListsController($scope, BackendService) {
     BackendService
       .postList(data)
       .success(function(response){
-        $('ul#lists').append('<li>' + '<a href="#/list/' + response.id + '"">' + response.name + '</a>' + '</li>')
+        $('ul#lists').append('<li>' + '<a href="#/list/' + response.id + '"">' + response.name + '</a>' + '</li>');
         $('form#new_list').trigger("reset");
       })
       .error(function(response) {

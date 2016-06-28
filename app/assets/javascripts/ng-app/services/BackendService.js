@@ -22,8 +22,12 @@ function BackendService($http) {
 
   this.postList = function(data) {
     return $http.post('/lists', data)
-  }
+  };
 
+  this.postTask = function(id, data) {
+    return $http.post('/list/' + id, data)
+  };
+  // id is not defined
 
 }
 

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-3">
+    <div class="col s12">
       <h4 class="page-header">Lists</h4>
 
         <ul id="lists">
@@ -10,23 +10,19 @@
     </div>
   </div>
 
+  <button ng-click="showme=true" class="btn btn-primary">Show List Form</button>
+  <button ng-click="showme=false" class="btn btn-primary">Hide List Form</button>
 
-  <!--  Add form to make new list-->
+  <div class="wrapper">
+    <div ng-show="showme">
+      <div class="row">
+        <h4 class="page-header">Add a List</h4>
+        <form class="form-group" ng-submit="addList()" id="new_list">
+          <input ng-model="newList" class="form-control" type="text" placeholder="Add List" ><br>
+          <input type="submit" value="List" class="btn btn-primary">
 
-
-
-    <button ng-click="showme=true" class="btn btn-primary">Show List Form</button>
-    <button ng-click="showme=false" class="btn btn-primary">Hide List Form</button>
-
-    <div class="wrapper">
-      <div ng-show="showme">
-        <div class="row">
-          <h4 class="page-header">Add a List</h4>
-          <form class="form-group" ng-submit="addList()">
-            <input ng-model="newList" class="form-control" type="text" placeholder="Add List" id="new_list"><br>
-            <input type="submit" value="List" class="btn btn-primary">
-
-          </form>
-        </div>
+        </form>
       </div>
     </div>
+  </div>
+</div>

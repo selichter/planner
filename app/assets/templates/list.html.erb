@@ -2,9 +2,31 @@
   <div class="row">
     <h4 class="page-header">{{list.name}}</h4>
   </div>
-  <div ng-repeat="task in list.tasks">
-    <a href="#/task/{{task.id}}">{{task.item}}</a>
-    <p>{{task.due_date}} -- {{task.status}}</p>
+  <div ng-repeat="task in list.tasks" id="listTasks">
+    <ul>
+      <li>
+        <a href="#/task/{{task.id}}">{{task.item}}</a>
+        <p>{{task.due_date}} -- {{task.status}}</p>
+      </li>
+    </ul>
+
+
   </div>
 
+  <button ng-click="showme=true" class="btn btn-primary">Show Task Form</button>
+  <button ng-click="showme=false" class="btn btn-primary">Hide Task Form</button>
+
+  <div class="wrapper">
+    <div ng-show="showme">
+      <div class="row">
+        <h4 class="page-header">Add a Task</h4>
+        <form class="form-group" ng-submit="addTask()" id="new_item">
+          <input ng-model="taskItem" class="form-control" type="text" placeholder="Task"><br>
+          <input ng-model="taskDate" class="form-control" type="text" placeholder="Due Date"><br>
+          <input type="submit" value="Task" class="btn btn-primary">
+
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
