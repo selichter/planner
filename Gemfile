@@ -15,6 +15,8 @@ gem 'angular_rails_csrf'
 
 gem 'active_model_serializers'
 gem 'devise'
+gem "omniauth-google-oauth2"
+gem "figaro"
 
 gem 'jquery-rails'
 gem 'turbolinks'

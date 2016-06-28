@@ -5,6 +5,11 @@ angular
     ])
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
+      .state('login', {
+        url: '/login',
+        templateUrl: 'login.html',
+        controller: 'LoginController as login',
+      })
       .state('profile', {
         url: '/',
         templateUrl: 'profile.html',
@@ -40,6 +45,7 @@ angular
         templateUrl: 'note.html',
         controller: 'NoteController as note'
       })
+
 
 
       $urlRouterProvider.otherwise("/");
