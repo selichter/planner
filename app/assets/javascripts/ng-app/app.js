@@ -45,6 +45,11 @@ angular
         templateUrl: 'note.html',
         controller: 'NoteController as note'
       })
+      .state('user', {
+        url: '/user/:id',
+        templateUrl: 'user.html',
+        controller: 'UserController as user'
+      })
 
 
 

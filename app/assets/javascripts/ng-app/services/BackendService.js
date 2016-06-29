@@ -37,6 +37,9 @@ function BackendService($http) {
     return $http.get('/notes/' + id)
   };
 
+  this.getUser = function(id) {
+    return $http.get('/users/' + id)
+  };
 }
 
 BackendService.$inject = ['$http']
