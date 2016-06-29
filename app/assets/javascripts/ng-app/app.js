@@ -16,7 +16,7 @@ angular
         controller: 'ProfileController as profile'
       })
       .state('profile.lists', {
-        url: '/lists',
+        url: 'lists',
         templateUrl: 'profile/lists.html',
         controller: 'ProfileListsController as lists'
       })
@@ -39,6 +39,11 @@ angular
         url: '/task/:id',
         templateUrl: 'task.html',
         controller: 'TaskController as task'
+      })
+      .state('profile.notes', {
+        url: 'notes',
+        templateUrl: 'profile/notes.html',
+        controller: 'ProfileNotesController as notes'
       })
       .state('notes', {
         url: '/notes',
