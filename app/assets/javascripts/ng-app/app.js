@@ -15,11 +15,16 @@ angular
         templateUrl: 'profile.html',
         controller: 'ProfileController as profile'
       })
-      .state('lists', {
-        url: '/lists', //index
-        templateUrl: 'lists.html',
-        controller: 'ListsController as lists'
+      .state('profile.lists', {
+        url: '/lists',
+        templateUrl: 'profile/lists.html',
+        controller: 'ProfileListsController as lists'
       })
+      // .state('lists', {
+      //   url: '/lists', //index
+      //   templateUrl: 'lists.html',
+      //   controller: 'ListsController as lists'
+      // })
       .state('list', { //show lists - list includes tasks
         url: '/list/:id',
         templateUrl: 'list.html',
